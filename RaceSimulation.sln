@@ -1,0 +1,35 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceSimulation", "RaceSimulation\RaceSimulation.csproj", "{056C1F8A-FD6C-4EC7-B18F-96AD157D49EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{1E299E94-BF4C-43C8-BD49-B3776D5328A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{B134CD20-4D21-4DC7-AA39-04FD13AC98EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerTest", "ControllerTest\ControllerTest.csproj", "{C750E61D-AC26-4920-A506-82B04DF32FC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{056C1F8A-FD6C-4EC7-B18F-96AD157D49EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056C1F8A-FD6C-4EC7-B18F-96AD157D49EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056C1F8A-FD6C-4EC7-B18F-96AD157D49EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056C1F8A-FD6C-4EC7-B18F-96AD157D49EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E299E94-BF4C-43C8-BD49-B3776D5328A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E299E94-BF4C-43C8-BD49-B3776D5328A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E299E94-BF4C-43C8-BD49-B3776D5328A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E299E94-BF4C-43C8-BD49-B3776D5328A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B134CD20-4D21-4DC7-AA39-04FD13AC98EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B134CD20-4D21-4DC7-AA39-04FD13AC98EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B134CD20-4D21-4DC7-AA39-04FD13AC98EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B134CD20-4D21-4DC7-AA39-04FD13AC98EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C750E61D-AC26-4920-A506-82B04DF32FC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C750E61D-AC26-4920-A506-82B04DF32FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C750E61D-AC26-4920-A506-82B04DF32FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C750E61D-AC26-4920-A506-82B04DF32FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
