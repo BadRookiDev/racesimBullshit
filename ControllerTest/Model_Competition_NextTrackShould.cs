@@ -6,23 +6,23 @@ using NUnit.Framework;
 namespace ControllerTest
 {
     [TestFixture]
-    public class Model_Competition_NextTrackShould
+    public class ModelCompetitionNextTrackShould
     {
-        private Competition _competition;
+        private Competition competition;
 
-        public Model_Competition_NextTrackShould()
+        public ModelCompetitionNextTrackShould()
         {
            
         }
 
         [SetUp]
         public void SetUp() {
-            _competition = new Competition();
+            competition = new Competition();
         }
 
         [Test]
-        public void NextTrack_EmptyQueue_ReturnNull(){
-            var result = _competition.NextTrack();
+        public void NextTrackEmptyQueueReturnNull(){
+            var result = competition.NextTrack();
             Assert.IsNull(result);
         }
     }

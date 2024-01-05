@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerTest", "ControllerTest\ControllerTest.csproj", "{C750E61D-AC26-4920-A506-82B04DF32FC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{B3750B38-B5F1-4320-98A3-B861808A63A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{C750E61D-AC26-4920-A506-82B04DF32FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C750E61D-AC26-4920-A506-82B04DF32FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C750E61D-AC26-4920-A506-82B04DF32FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3750B38-B5F1-4320-98A3-B861808A63A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3750B38-B5F1-4320-98A3-B861808A63A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3750B38-B5F1-4320-98A3-B861808A63A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3750B38-B5F1-4320-98A3-B861808A63A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

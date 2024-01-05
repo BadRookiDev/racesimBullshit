@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using Controller;
+using View;
 
 namespace RaceSimulation
 {
@@ -10,7 +11,7 @@ namespace RaceSimulation
         {
             Data.Initialize();
             Data.NextRace();
-            Console.WriteLine(Data.CurrentRace.Track.Name);
+            ASCIIvisualizer.Initialize();
             for (; ; )
             {
                 Thread.Sleep(100);

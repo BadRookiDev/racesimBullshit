@@ -5,8 +5,9 @@ namespace Model
     {
         public SectionTypes SectionType { get; set; }
 
-        public Section()
+        public Section(SectionTypes sectiontype)
         {
+            SectionType = sectiontype;
         }
     }
 }

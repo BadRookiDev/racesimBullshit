@@ -6,7 +6,7 @@ namespace Model
         Red,
         Green,
         Yellow,
-        Grey,
+        Gray,
         Blue
     }
 }

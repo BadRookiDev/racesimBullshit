@@ -1,5 +1,4 @@
-﻿using System;
-namespace Model
+﻿namespace Model
 {
     public class Driver : IParticipant
     {
@@ -10,7 +9,7 @@ namespace Model
         public string Name { get => _name; set => _name = value; }
         public int Points { get => _points; set => _points = value; }
         public IEquipment Equipment { get => _equipment; set => _equipment = value; }
-        public TeamColor TeamColors { get => _teamColor; set => _teamColor = value; }
+        public TeamColor TeamColor { get => _teamColor; set => _teamColor = value; }
         
 
         public Driver(string name, int points, IEquipment equipment, TeamColor teamColor) 
@@ -18,7 +17,7 @@ namespace Model
             Name = name;
             Points = points;
             Equipment = equipment;
-            TeamColors = teamColor;
+            TeamColor = teamColor;
         }
     }
 }

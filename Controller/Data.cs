@@ -17,51 +17,55 @@ namespace Controller
 
         public static void AddParticipants()
         { 
-            List<IParticipant> _list = new List<IParticipant> {
+            List<IParticipant> list = new List<IParticipant> {
                 new Driver("Razor",0, new Car(1, 1200, 300, false) ,TeamColor.Blue),
-                new Driver("Bull", 0, new Car(1, 1200, 300, false),TeamColor.Grey),
-                new Driver("Ronnie", 0, new Car(1, 1200, 300, false),TeamColor.Red)
+                new Driver("Bull", 0, new Car(1, 1200, 300, false),TeamColor.Green),
+                new Driver("Ronnie", 0, new Car(1, 1200, 300, false),TeamColor.Yellow)
             };
-            Competition.Participants = _list;
+            Competition.Participants = list;
         }
 
         public static void AddTracks()
         {
-            SectionTypes[] SectionsA = new SectionTypes[] {
+            SectionTypes[] sectionsTrack1 = {
+                SectionTypes.StartGrid,
+                SectionTypes.Finish,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner
+            };
+
+            SectionTypes[] sectionsTrack2 = {
                 SectionTypes.StartGrid,
                 SectionTypes.Straight,
                 SectionTypes.LeftCorner,
+                SectionTypes.LeftCorner,
+                SectionTypes.Straight,
+                SectionTypes.RightCorner,
                 SectionTypes.RightCorner,
                 SectionTypes.Straight,
                 SectionTypes.Finish
             };
 
-            SectionTypes[] SectionsB = new SectionTypes[] {
-                SectionTypes.StartGrid,
-                SectionTypes.Straight,
-                SectionTypes.LeftCorner,
-                SectionTypes.LeftCorner,
-                SectionTypes.Straight,
-                SectionTypes.RightCorner,
-                SectionTypes.RightCorner,
-                SectionTypes.Straight,
-                SectionTypes.Finish
-            };
-
-            Track _a = new Track("T-1", SectionsA);
-            Track _b = new Track("T-2", SectionsB);
+            var track1 = new Track("Discovery Track", sectionsTrack1);
+            var track2 = new Track("Resort Circuit", sectionsTrack2);
 
             Queue<Track> tracks = new Queue<Track>();
-            tracks.Enqueue(_a);
-            tracks.Enqueue(_b);
+            tracks.Enqueue(track1);
+            tracks.Enqueue(track2);
 
             Competition.Tracks = tracks;
         }
 
         public static void NextRace() {
-            Track _track = Competition.NextTrack();
-            if (_track != null) {
-                CurrentRace = new Race(_track, Competition.Participants);
+            Track track = Competition.NextTrack();
+            if (track != null) {
+                CurrentRace = new Race(track, Competition.Participants);
             }
         }
 
