@@ -8,6 +8,7 @@ namespace Controller
     {
         public static Competition Competition { get; set; }
         public static Race CurrentRace { get; set; }
+        public static readonly int raceTimerMs = 500;
 
         public static void Initialize(){
             Competition = new Competition();
@@ -18,9 +19,9 @@ namespace Controller
         public static void AddParticipants()
         { 
             List<IParticipant> list = new List<IParticipant> {
-                new Driver("Razor",0, new Car(1, 1200, 300, false) ,TeamColor.Blue),
-                new Driver("Bull", 0, new Car(1, 1200, 300, false),TeamColor.Green),
-                new Driver("Ronnie", 0, new Car(1, 1200, 300, false),TeamColor.Yellow)
+                new Driver("Razor",0, new Car(25, 8, 8, false) ,TeamColor.Blue),
+                new Driver("Bull", 0, new Car(15, 7, 8, false),TeamColor.Green),
+                new Driver("Ronnie", 0, new Car(10, 4, 10, false),TeamColor.Yellow)
             };
             Competition.Participants = list;
         }

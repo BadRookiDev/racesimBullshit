@@ -9,6 +9,10 @@ namespace View
 {
     public static class ASCIIvisualizer
     {
+        public static void OnDriversChanged(object sender, DriversChangedEventArgs e)
+        {
+            DrawTrack(e.Track);
+        }
         
         #region graphics
         
@@ -26,12 +30,15 @@ namespace View
         
         public static void Initialize()
         {
-            Console.Clear();
+            Data.CurrentRace.DriversChanged += OnDriversChanged;
+            
             DrawTrack(Data.CurrentRace.Track);
         }
         
         public static void DrawTrack(Track track)
         {
+            Console.Clear();
+            
             var currentDirection = Direction.Right;
             var xPos = 0;
             var yPos = 0;
@@ -105,7 +112,7 @@ namespace View
             (string leftChar, IParticipant leftPar) pcl = ((left?.Name ?? " ")[0].ToString(), left);
             (string rightChar, IParticipant rightPar) pcr = ((right?.Name ?? " ")[0].ToString(), right);
             
-            foreach (char character in asciiLine)
+            foreach (var character in asciiLine)
             {
                 if (character == '1' || character == '2')
                 {

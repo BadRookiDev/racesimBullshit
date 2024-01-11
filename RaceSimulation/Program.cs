@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading;
+﻿using System.Threading;
 using Controller;
 using View;
 
@@ -11,10 +10,14 @@ namespace RaceSimulation
         {
             Data.Initialize();
             Data.NextRace();
+            
             ASCIIvisualizer.Initialize();
+            
+            Data.CurrentRace.Start();
+            
             for (; ; )
             {
-                Thread.Sleep(100);
+                Thread.Sleep(Data.raceTimerMs);
             }
         }
     }
